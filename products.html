@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Point Cameras - Products</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f7f6; 
+            color: #333;
+        }
+
+        .page-container {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .header-row {
+            background-color: #171d2b; 
+            color: white;
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-cell {
+            padding: 0;
+            text-align: center;
+        }
+
+        .nav-table {
+            width: 100%;
+            table-layout: fixed; 
+            border-collapse: collapse;
+        }
+
+        .nav-table a {
+            display: block;
+            padding: 15px 0;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .nav-table a:hover {
+            background-color: #0d121c;
+        }
+
+        .nav-table a[href="products.html"] {
+            background-color: #007bff;
+        }
+        
+        .content-cell {
+            padding: 40px 20px;
+            background-color: white;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 1000px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .product-grid-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 20px; 
+        }
+
+        .product-cell {
+            width: 25%;
+            vertical-align: top;
+            padding: 10px;
+        }
+
+        .product-card {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            height: 220px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-card h4 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #333;
+            font-size: 1em;
+            flex-grow: 1;
+            line-height: 1.2;
+        }
+
+        .product-card p {
+            margin: 0;
+            color: #007bff;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        /* NEW: Styling for actual images */
+        .product-image-actual {
+            width: 100%;
+            height: auto;
+            max-height: 120px; /* Constrain image height */
+            object-fit: contain; /* Ensure the image fits without distortion */
+            border-radius: 6px;
+            margin-bottom: 5px;
+            background-color: #fff; /* White background for image frame */
+        }
+
+    </style>
+</head>
+<body>
+
+    <table class="page-container" role="presentation">
+
+        <tr class="header-row">
+            <td class="header-cell">
+                <table class="nav-table" role="navigation">
+                    <tr>
+                        <td><a href="index.html">Home Page</a></td>
+                        <td><a href="about.html">About Us</a></td>
+                        <td><a href="products.html">Products</a></td>
+                        <td><a href="contact.html">Contact</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding: 20px; vertical-align: top;">
+                <div style="margin: 0 auto; max-width: 1000px;">
+
+                    <table class="content-cell" role="presentation">
+                        <tr>
+                            <td>
+                                <h2>Lenses, Bodies, and Essential Gear</h2>
+
+                                <table class="product-grid-table" role="presentation">
+
+                                    <tr>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/EOS_R1_body.png" alt="EOS R1" class="product-image-actual">
+                                                <h4>Canon EOS R1 (Body)</h4>
+                                                <p>$6,299.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/rf50mm-f-1.avif" alt="50mm f/1.2 USM" class="product-image-actual">
+                                                <h4>50mm f/1.2 USM</h4>
+                                                <p>$1,899.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/USMII.webp" alt="24-70mm f/2.8 USM II Lens" class="product-image-actual">
+                                                <h4>24-70mm f/2.8 USM II</h4>
+                                                <p>$2,199.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/Travel_Tripod.webp" alt="Traveler Carbon Tripod" class="product-image-actual">
+                                                <h4>Traveler Carbon Tripod</h4>
+                                                <p>$349.00</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/EOS_R5_Mark_II.png" alt="EOS R5 Mark II" class="product-image-actual">
+                                                <h4>EOS R5 Mark II (Body)</h4>
+                                                <p>$3,899.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/Gear_Bag.jpg" alt="Professional Gear Camera Backpack" class="product-image-actual">
+                                                <h4>Professional Gear Bag</h4>
+                                                <p>$195.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/SanDisk_CFExpress.jpg" alt="128GB CFexpress Pro Card" class="product-image-actual">
+                                                <h4>128GB CFexpress Pro</h4>
+                                                <p>$189.99</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/NP_FZ100.jpg" alt="Spare Camera Battery Pack" class="product-image-actual">
+                                                <h4>NP-FZ100 Spare Battery</h4>
+                                                <p>$75.00</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/Canon_portrait_Kit.avif" alt="A9000 Portrait Kit" class="product-image-actual">
+                                                <h4>Canon Portrait Kit</h4>
+                                                <p>$5,299.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/ND_Filter_set.webp" alt="Variable ND Filter Set" class="product-image-actual">
+                                                <h4>Variable ND Filter Set</h4>
+                                                <p>$99.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/SpeedLight_EL5.jpg" alt="Aura Pro Speedlight Flash" class="product-image-actual">
+                                                <h4>Speedlite EL-5</h4>
+                                                <p>$399.99</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/2271C002_ef-85mm-f-1.webp" alt="85mm f/1.4 Portrait Lens" class="product-image-actual">
+                                                <h4>Canon EF 85mm f/1.4L IS USM</h4>
+                                                <p>$1,699.99</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/EOS_R100.jpg" alt="Canon EOS R100" class="product-image-actual">
+                                                <h4>Canon EOS R100</h4>
+                                                <p>$459.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/lens-cleaner-lenspen-cleaning-accessories-ln-dslrprokit-5.webp" alt="LensPen Cleaning Tool" class="product-image-actual">
+                                                <h4>LensPen Cleaning Tool</h4>
+                                                <p>$19.99</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/Shotgun_Video_Mic.webp" alt="Shotgun Video Microphone" class="product-image-actual">
+                                                <h4>Shotgun Video Mic</h4>
+                                                <p>$149.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/512GB_CFexpress.jpg" alt="Pro Gear Assurance Plan" class="product-image-actual">
+                                                <h4>Angelbird AV PRO CFexpress SE 512GB Type B</h4>
+                                                <p>$164.00</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/Universal_L.jpeg" alt="Universal L-Bracket" class="product-image-actual">
+                                                <h4>Universal L-Bracket</h4>
+                                                <p>$45.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/canon_Strap.webp" alt="Heritage Leather Camera Strap" class="product-image-actual">
+                                                <h4>Canon Camera Strap</h4>
+                                                <p>$29.99</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/wireless_Flash.jpg" alt="Wireless Flash Trigger Remote" class="product-image-actual">
+                                                <h4>Wireless Flash Trigger</h4>
+                                                <p>$80.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/weather_shield_cover.jpg" alt="Weather Shield Rain Cover" class="product-image-actual">
+                                                <h4>Weather Shield Cover</h4>
+                                                <p>$35.00</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/EF_70-200mm.jpg" alt="70-200mm f/4 Telezoom Lens" class="product-image-actual">
+                                                <h4>Canon EF 70-200mm f/4L USM Telephoto Zoom Lens</h4>
+                                                <p>$1,649.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/USB_C_Card_Reader.jpg" alt="USB C SD 4.0 Memory Card Reader" class="product-image-actual">
+                                                <h4>USB C SD 4.0 Memory Card Reader</h4>
+                                                <p>$29.99</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/monopod.jpg" alt="Manfrotto Video Monopod" class="product-image-actual">
+                                                <h4>Manfrotto Video Monopod</h4>
+                                                <p>$85.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/Tethering_cable.jpg" alt="Pro Tethering Cable" class="product-image-actual">
+                                                <h4>Pro Tethering Cable 5m</h4>
+                                                <p>$49.99</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/sensor_cleaning_kit.jpg" alt="UES 21-in-1 Camera Cleaning Kit" class="product-image-actual">
+                                                <h4>UES 21-in-1 Camera Cleaning Kit</h4>
+                                                <p>$59.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/petal_len.jpg" alt="Petal Lens Hood" class="product-image-actual">
+                                                <h4>Petal Lens Hood</h4>
+                                                <p>$15.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/Ef_35mm.jpg" alt="35mm f/2 Street Prime Lens" class="product-image-actual">
+                                                <h4>EF 35mm f/2</h4>
+                                                <p>$799.00</p>
+                                            </div>
+                                        </td>
+                                        <td class="product-cell">
+                                            <div class="product-card">
+                                                <img src="Img/CPL_Filter.jpg" alt="Circular Polarizer Filter" class="product-image-actual">
+                                                <h4>CPL Filter (77mm)</h4>
+                                                <p>$89.00</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
